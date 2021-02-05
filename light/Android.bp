@@ -18,6 +18,7 @@ cc_binary {
     name: "android.hardware.light@2.0-service.asus_X01AD",
     proprietary: true,
     init_rc: ["android.hardware.light@2.0-service.asus_X01AD.rc"],
+    vintf_fragments: ["android.hardware.light@2.0-service.asus_X01AD.xml"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
         "libhardware",
